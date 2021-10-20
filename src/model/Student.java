@@ -9,26 +9,6 @@ public class Student {
                     surname;
     private Date     birthday;
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
-
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
     public Student(int id, String firstname, String surname, Date birthday, int grade) {
         this.id = id;
         this.grade = grade;
@@ -37,5 +17,23 @@ public class Student {
         this.birthday = birthday;
     }
 
-    public Student(){}
+    public int getId() {
+        return id;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
 }
