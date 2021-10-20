@@ -35,11 +35,8 @@ public class MainUI {
     }
 
     private void createTable() {
-
-        var data = StudentController.getStudentList();
-
         showTable.setModel(new DefaultTableModel(
-                data,
+                StudentController.getData(),
                 new String[]{"Firstname", "Surname", "Grade", "Birthday"}
         ));
         TableColumnModel columns = showTable.getColumnModel();

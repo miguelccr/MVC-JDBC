@@ -3,11 +3,11 @@ package model;
 import java.util.Date;
 
 public class Student {
-    private int      id,
+    private int     id,
                     grade;
-    private String   firstname,
+    private String  firstname,
                     surname;
-    private Date     birthday;
+    private Date    birthday;
 
     public Student(int id, String firstname, String surname, Date birthday, int grade) {
         this.id = id;

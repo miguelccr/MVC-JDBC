@@ -10,7 +10,7 @@ import java.util.List;
 
 public class StudentController {
 
-    public static Object[][] getStudentList() {
+    public static Object[][] getData() {
         var students = getStudents();
         var studentList = new Object[students.length][4];
         for (int i = 0; i < students.length; i++) {

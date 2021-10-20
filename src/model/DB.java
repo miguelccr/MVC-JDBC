@@ -8,7 +8,7 @@ public class DB {
         user = "root",
         password = "";
 
-    public static Connection getConnection() throws SQLException {
+    private static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, user, password);
     }
 
